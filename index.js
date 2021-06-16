@@ -15,6 +15,12 @@ cancelBtn.onclick = ()=>{
   cancelBtn.classList.remove("show");
   body.classList.remove("disabledScroll");
 }
+menu.onclick = ()=>{
+  menu.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  cancelBtn.classList.remove("show");
+  body.classList.remove("disabledScroll");
+}
 
 
 window.onscroll = function() {myFunction()};
