@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WisataIndonesia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsif.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="shortcut icon" href="images/logo.png">
 </head>
+
 <body>
-  <nav class="navbar">
+
+  <nav class="navbar ">
     <div class="content">
-      <div class="logo"><a href="#">WisataIndonesia</a></div>
+      <div class="logo"><p>WisataIndonesia</p></div>
       <ul class="menu-list">
         <div class="icon cancel-btn">
           <i class="fas fa-times"></i>
         </div>
         <li><a href="#banner">Beranda</a></li>
         <li><a href="#destinasi">Destinasi</a></li>
-        <li><a href="#">Profi</a></li>
+        <li><a href="#profile">Profil</a></li>
       </ul>
       <div class="icon menu-btn">
         <i class="fas fa-bars"></i>
@@ -28,57 +32,53 @@
     </div>
   </nav>
 
-  <div id="banner" class="banner">
-	<div class="main-image">
-		<div class="container1">
-			<h1><span>Ayo Berwisata #Dirumahaja</span></h1>
-      <div class="space-button">
-			  <a class="button" href="#">Pilih Destinasi ></a>
-      </div>
-		</div>
+<div id="banner" class="banner">
+	<div class="container1">
+		<h1>Ayo Berwisata <span> #Dirumahaja</span></h1>
+    <div class="space-button">
+			<a class="button" href="#destinasi">Pilih Destinasi </a>
+    </div>
 	</div>
-  </div>
-  <div class="about">
- <div id="destinasi" class="content">
-  <div class="text">
-    <h1>Destinasi</h1>
-  </div>
+</div>
+
+ <div id="destinasi" class="destinasi">
+  <div class='title'><img class="teks" src="images/destinasi.png" alt=""></div>
    <!--image card layout start-->
    <div class="container">
     <!--image row start-->
     <div class="row">
       <!--image card start-->
       <div class="image">
-        <img src="images/papua.jpg" alt="">
+        <img src="images/bogor.jpg" alt="" >
         <div class="details">
-          <h2>Your <span>Title</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2>bogor</h2>
+          <p>Kota Bogor adalah sebuah kota di Provinsi Jawa Barat. Bogor dikenal dengan julukan Kota Hujan, karena memiliki curah hujan yang sangat tinggi.</p>
           <div class="more">
-            <a href="#" class="read-more">Read <span>More</span></a>
+            <a onclick="video1()" class="start-walk">Mulai <span>Perjalanan</span></a>
           </div>
         </div>
       </div>
       <!--image card end-->
       <!--image card start-->
       <div class="image">
-        <img src="images/g-2.jpg" alt="">
+        <img src="images/tanggerang.jpg" alt="">
         <div class="details">
-          <h2>Your <span>Title</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2>Tangerang</h2>
+          <p>Tangerang merupakan kota terbesar di Provinsi Banten serta ketiga terbesar di kawasan Jabodetabek setelah Jakarta dan Bogor</p>
           <div class="more">
-            <a href="#" class="read-more">Read <span>More</span></a>
+            <a onclick="video2()" class="start-walk">Mulai <span>Perjalanan</span></a>
           </div>
         </div>
       </div>
       <!--image card end-->
       <!--image card start-->
       <div class="image">
-        <img src="images/curug.jpg" alt="">
+        <img src="images/bali.jpg" alt="">
         <div class="details">
-          <h2>Your <span>Title</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2>bali</h2>
+          <p>Bali adalah sebuah pulau di Indonesia yang dikenal karena memiliki banyak tempat wisata. Pulau Bali juga dikenal sebagai tempat untuk relaksasi dengan yoga dan meditasi</p>
           <div class="more">
-            <a href="#" class="read-more">Read <span>More</span></a>
+            <a onclick="video3()" class="start-walk">Mulai <span>Perjalanan</span></a>
           </div>
         </div>
       </div>
@@ -89,36 +89,36 @@
     <div class="row">
       <!--image card start-->
       <div class="image">
-        <img src="images/bandung.jpg" alt="">
+        <img src="images/depok.jpg" alt="">
         <div class="details">
-          <h2>Your <span>Title</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2> depok</h2>
+          <p>Kota Depok adalah sebuah kota di Provinsi Jawa Barat. Dahulu Depok adalah kecamatan dalam wilayah Kabupaten Bogor, yang kemudian mendapat status kota pada tanggal 27 April 1999.</p>
           <div class="more">
-            <a href="#" class="read-more">Read <span>More</span></a>
+            <a onclick="video4()" class="start-walk">Mulai <span>Perjalanan</span></a>
           </div>
         </div>
       </div>
       <!--image card end-->
       <!--image card start-->
       <div class="image">
-        <img src="images/bandungq.jpg" alt="">
+        <img src="images/aceh.jpg" alt="">
         <div class="details">
-          <h2>Bojong <span>Gede</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2>aceh</h2>
+          <p>Aceh merupakan salah satu provinsi di Indonesia yang diberi status sebagai daerah istimewa dan juga diberi kewenangan otonomi khusus.</p>
           <div class="more">
-            <a href="#" class="read-more">Read <span>More</span></a>
+            <a onclick="video5()" class="start-walk">Mulai <span>Perjalanan</span></a>
           </div>
         </div>
       </div>
       <!--image card end-->
       <!--image card start-->
       <div class="image">
-        <img src="images/baLi.jpg" alt="">
+        <img src="images/jakarta.jpg" alt="">
         <div class="details">
-          <h2>Bojong <span>Gede</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2>jakarta</h2>
+          <p>Jakarta merupakan ibu kota negara Indonesia serta menjadi pusat kegiatan pemerintahan dan bisnis</p>
           <div class="more">
-            <a href="#" class="read-more">Read <span>More</span></a>
+            <a onclick="video6()" class="start-walk">Mulai <span>Perjalanan</span></a>
           </div>
         </div>
       </div>
@@ -127,78 +127,65 @@
     <!--image row end-->
   </div>
   <!--image card layout end-->
- </div>
-
- <div class="text-profile">
-    <h1>profile</h1>
-  </div>       
-  <div class="profie-web">
-
-    <div class="container-card">
-        
-      <div class="card">
-
-          <img class="profile-picture" src="images/adam.jpg">
-
-          <div class="info-container">
-              <span class="name">Adam Darusman</span>
-              <span class="subtitle">Web Design</span>
-              <span class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</span>
+ </div> 
+  
+<div id="profile" class="profile-web">
+  <div class='title'><img class="teks" src="images/profil.png" alt=""></div>     
+  <div class="container-card">
+    <div class="card">
+        <img class="profile-picture" src="images/adam.jpg">
+        <div class="info-container">
+            <span class="name">Adam Darusman</span>
+            <span class="subtitle">Web Design</span>
+            <span class="description">"hii nama saya Adam Darusman. Saat ini saya sedang menempuh pendidikan kelas 10 di SMKN 1 cibinong jurusan Sistem Informasi Jaringan dan Aplikasi"</span>
+            <div class="medsos">
+              <div class="container-contact">
+                  <ul>
+                      <li><a href="https://t.me/AdamDarusman" target="blank"><i class="fab fa-telegram fa-2x"></i></a></li>
+                      <li><a href="https://github.com/AdamDarusman" target="blank"><i class="fab fa-github fa-2x"></i></a></li>
+                      <li><a href="https://www.instagram.com/adm_drsmn/" target="blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                  </ul>
+              </div>
           </div>
-
-      </div>
-
-      <div class="card">
-
-          <img class="profile-picture" src="images/Kilta.jpg">
-
-          <div class="info-container">
-              <span class="name">Kilta Aufa Qorina</span>
-              <span class="subtitle">Subtitle</span>
-              <span class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</span>
-          </div>
-
-      </div>
-
-  </div>
-
-  </div>
-  <div class="container-footer">
-    <div class="footer">
-      <nav class="menu">
-          <a href="#">Beranda</a> |
-          <a href="#">Destinasi Pilihan</a>
-      </nav>
-      <nav class="menu">
-          <a href="#"> Kebijakan Cookie</a> |
-          <a href="#"> Kebijakan Privasi</a> |
-          <a href="#"> Syarat dan Ketentuan</a> 
-      </nav>
-      <p>copyright © WisataIndonesia</p>
+        </div>
     </div>
-  </div>
-  <script>
-    const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menu = document.querySelector(".menu-list");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      menu.classList.add("active");
-      menuBtn.classList.add("hide");
-      cancelBtn.classList.add("show");
-      body.classList.add("disabledScroll");
-    }
-    cancelBtn.onclick = ()=>{
-      menu.classList.remove("active");
-      menuBtn.classList.remove("hide");
-      cancelBtn.classList.remove("show");
-      body.classList.remove("disabledScroll");
-    }
+  <div class="card">
+        <img class="profile-picture" src="images/Kilta.jpg">
+        <div class="info-container">
+            <span class="name">Kilta Aufa Qorina</span>
+            <span class="subtitle">Web Design</span>
+            <span class="description">"hii nama saya Kilta Aufa Qorina. Saat ini saya sedang menempuh pendidikan kelas 10 di SMKN 1 cibinong jurusan Multimedia"</span>
+            <div class="medsos">
+              <div class="container-contact">
+                  <ul>
+                      <li><a href="https://t.me/kill_klrr" target="blank"><i class="fab fa-telegram fa-2x"></i></a></li>
+                      <li><a href="https://github.com/kiltaAQ/" target="blank"><i class="fab fa-github fa-2x"></i></a></li>
+                      <li><a href="https://www.instagram.com/kill_klrr" target="blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
 
-    
-  </script>
+  </div>
+  
+<div id='footer' class="container-footer">
+  <div class="footer">
+    <nav class="menu">
+        <a href="#">Beranda</a> |
+        <a href="#destinasi">Destinasi Pilihan</a>
+    </nav>
+    <nav class="menu">
+        <a href="#footer"> Kebijakan Cookie</a> |
+        <a href="#footer"> Kebijakan Privasi</a> |
+        <a href="#footer"> Syarat dan Ketentuan</a> 
+    </nav>
+    <p>copyright © WisataIndonesia</p>
+  </div>
+</div>
+
+<script src="index.js"></script>
 
 </body>
 </html>
-
